@@ -7,7 +7,7 @@ from django.template import Context
 
 def html_to_pdf_directly(request):
     template = get_template("home.html")
-    context = Context({'pagesize': 'A4', 'data': 'abc'})
+    context = Context({'pagesize': 'A4'})
     html = template.render(context)
     result = StringIO.StringIO()
     pdf = pisa.pisaDocument(StringIO.StringIO(html), dest=result)

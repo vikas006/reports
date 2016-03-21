@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'DIRS': [
             # str('templates'),
-            os.path.join(BASE_DIR, "templates")
+            # os.path.join(BASE_DIR, "templates")
         ],
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'APP_DIRS': True,
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tryreport.wsgi.application'
+# WSGI_APPLICATION = 'tryreport.wsgi.application'
 
 
 # Database
